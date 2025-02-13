@@ -11,7 +11,7 @@ export interface ListingCarDetailPageProps {
 }
 
 async function getData(slug: string) {
-    const response = await fetch(`http://217.114.2.83:3000/api/destinations?filters[slug][$eq]=${slug}` + "&populate=*");
+    const response = await fetch(`https://natoladrad.beget.app/api/destinations?filters[slug][$eq]=${slug}` + "&populate=*");
     return await response.json();
 }
 

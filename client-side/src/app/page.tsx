@@ -148,13 +148,13 @@ const DEMO_CATS_2: TaxonomyType[] = [
 ];
 
 async function getHomePageDataWithRelations() {
-  const response = await fetch('http://217.114.2.83:3000/api/global?populate[destinations][populate]=*', {
+  const response = await fetch('https://natoladrad.beget.app/api/global?populate[destinations][populate]=*', {
     headers: { 'Cache-Control': 'no-cache' } });
   return response.json();
 }
 
 async function getHomePageData() {
-  const response = await fetch('http://217.114.2.83:3000/api/global', {
+  const response = await fetch('https://natoladrad.beget.appF/api/global', {
     headers: { 'Cache-Control': 'no-cache' } });
   return response.json();
 }
@@ -178,7 +178,7 @@ async function PageHome() {
           name: destination.cityWhen,
           taxonomy: "category",
           count: 1,
-          thumbnail: 'http://217.114.2.83:3000' + destination.displayImage?.url,
+          thumbnail: 'https://natoladrad.beget.app' + destination.displayImage?.url,
       });
   }
   return (
