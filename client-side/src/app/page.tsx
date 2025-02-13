@@ -154,7 +154,7 @@ async function getHomePageDataWithRelations() {
 }
 
 async function getHomePageData() {
-  const response = await fetch('https://natoladrad.beget.appF/api/global', {
+  const response = await fetch('https://natoladrad.beget.app/api/global', {
     headers: { 'Cache-Control': 'no-cache' } });
   return response.json();
 }
